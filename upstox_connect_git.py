@@ -464,22 +464,7 @@ class Connect_broker:
     def unsubscribe_instruments(self,inst):
         self.u.unsubscribe(inst, LiveFeedType.Full)
         
-    '''
-    def cancel_orders_inst(self,inst,script='',script_cat=''):
-        self.u.get_order_history()
-    '''
 
-
-'''
-u=cu.Connect()        
-cu.subscribe_contracts()
-
-
-            nfo=json_normalize(cu.u.get_master_contract('NSE_FO') ).T
-            nsei=json_normalize(cu.u.get_master_contract('NSE_INDEX') ).T
-nfo=json_normalize(cu.u.get_master_contract('NSE_FO') )
-df=json_normalize(cu.u.get_order_history())
-'''
 #cu=Connect_broker('sunil')
 #u=cu.Connect()        
 
